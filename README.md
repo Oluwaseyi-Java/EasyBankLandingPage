@@ -1,0 +1,2 @@
+# EasyBankLandingPage
+a landing page

@@ -1,0 +1,439 @@
+.Header {
+  position: fixed;
+  /* z-index: 99; */
+  width: 100%;
+  /* height: 100%; */
+}
+
+.Header.Open {
+  height: 100%;
+  z-index: 99;
+}
+
+.Header .TopBar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin: 0;
+}
+
+.TopBar #NavToggle {
+  cursor: pointer;
+}
+
+.TopBar #NavToggle:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.Header .TopBar .img img {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.Header .TopBar .btn button {
+  margin: 15px 0;
+}
+
+.Header .TopBar .nav {
+  display: none;
+}
+
+.Header .TopBar .btn {
+  display: none;
+}
+
+.Navigation {
+  padding-top: 10px;
+  text-align: center;
+  /* background: hsl(0, 0%, 98%); */
+  background: rgba(0, 0, 0, 0.309);
+  height: 100%;
+}
+
+.Navigation.NavClose {
+  display: none;
+}
+
+.Navigation .NavCard {
+  width: 70%;
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  padding: 7% 5%;
+  transition: all 5s ease;
+}
+
+.Navigation .NavCard p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.Navigation .NavCard p a {
+  text-decoration: none;
+  color: rgb(91, 91, 91);
+}
+
+.Navigation .NavCard p a:hover {
+  color: hsla(136, 65%, 51%, 0.537);
+}
+
+.Hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: hsl(0, 0%, 98%);
+  padding: 0 0 100px 0;
+}
+
+.Hero .HeroImg {
+  width: 100%;
+  background: url(./images/bg-intro-mobile.svg) no-repeat;
+  background-size: contain;
+}
+
+.Hero .HeroImg img {
+  width: 100%;
+}
+
+.HeroContent {
+  text-align: center;
+  padding: 0 10%;
+}
+
+.HeroContent h2 {
+  color: hsl(233, 26%, 24%);
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.HeroContent p {
+  font-size: 1.1em;
+  color: grey;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+button:hover {
+  background: linear-gradient(90deg, hsla(136, 65%, 51%, 0.521), hsl(192, 70%, 51%, 0.521));
+
+}
+
+.Offer {
+  text-align: center;
+  background: hsl(220, 16%, 96%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Offer h2 {
+  padding: 30px 20% 10px;
+  font-size: 2.0em;
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+}
+
+.Offer p {
+  color: grey;
+  font-weight: 500;
+}
+
+.Offer .top {
+  padding: 0 10% 20px;
+}
+
+.Offer .Offers-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.Offer .Offers {
+  width: 80%;
+  margin: auto;
+  padding: 20px 10%;
+}
+
+.Offer .Offers h3 {
+  color: hsl(233, 26%, 24%);
+  font-size: 1.2em;
+}
+
+.Articles {
+  padding-top: 20px;
+  background: hsl(0, 0%, 98%);
+  padding-bottom: 50px;
+}
+
+.Articles p {
+  color: grey;
+}
+
+.Articles h2 {
+  text-align: center;
+  color: hsl(233, 26%, 24%);
+  font-weight: 400;
+}
+
+.Articles .Cards {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Articles .Cards .Card {
+  width: 100%;
+  background: white;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.Articles .Cards .Card .img {
+  width: 100%;
+  height: 200px;
+}
+
+.Articles .Cards .Card .img img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.Cards .Card .text {
+  padding: 20px 10%;
+}
+
+.Card .text h3 {
+  color: gray;
+  font-weight: 500;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.Card .text h3:hover {
+  text-decoration: underline;
+  color: hsl(136, 65%, 51%);
+}
+
+.Card .text .content {
+  font-size: 0.8em;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 0;
+  background: hsl(233, 26%, 24%);
+  color: white;
+}
+
+footer .first .icons {
+  margin-top: 20px;
+}
+footer .first .icons span {
+  padding: 10px;
+}
+footer .first .icons span:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+footer p:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+@media (min-width:600px) {
+  .Hero {
+    padding-top: 50px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, hsla(136, 65%, 51%, 0.537), hsla(192, 70%, 51%, 0.488));
+  }
+
+  .Hero .HeroImg {
+    width: 100%;
+    background: none;
+  }
+
+  .Hero .HeroImgImg {
+    width: 40%;
+  }
+
+  .Hero .HeroContent {
+    text-align: left;
+  }
+
+  .Hero .HeroContent p {
+    color: hsl(233, 26%, 24%);
+  }
+
+  .Offer .Offers-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 10%;
+  }
+
+  .Offer .Offers {
+    width: 35%;
+    padding: 20px 0;
+  }
+
+  .Offer .Offers p {
+    font-size: 0.8em;
+  }
+
+  .Articles .Cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Articles .Cards .Card {
+    width: 45%;
+
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 10%;
+    font-size: 12px;
+  }
+
+  footer .first {
+    width: 30%;
+  }
+footer .first .icons span{
+  padding-left: 0;
+}
+  footer .second {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+
+  footer .second p {
+    font-size: 0.9em;
+    width: 50%;
+  }
+
+  footer .third {
+    width: 40%;
+    text-align: right;
+  }
+
+  footer .third p {
+    font-size: 0.9em;
+  }
+
+  footer .third button {
+    font-size: 0.8em;
+  }
+
+}
+
+
+@media (min-width:1000px) {
+  .Header .TopBar .nav {
+    display: flex;
+  }
+
+  .Header .TopBar .nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: gray;
+  }
+
+  .Header .TopBar .nav a:hover {
+    border-bottom: 3px solid hsla(136, 65%, 51%, 0.537);
+  }
+
+
+  .Header .TopBar .btn {
+    display: block;
+  }
+
+  .Header .TopBar #NavToggle {
+    display: none;
+  }
+
+  .Header .Navigation {
+    display: none;
+  }
+
+  .Hero {
+    justify-content: left;
+  }
+
+  .Hero .HeroImg {
+    width: 80%;
+  }
+
+  .HeroImgImg {
+    width: 40%;
+  }
+
+  .HeroContent {
+    padding-right: 30%;
+  }
+
+  .Offer {
+    text-align: left;
+  }
+
+  .Offer h2 {
+    padding: 0 10%;
+  }
+
+  .Offer .Offers {
+    width: 23%;
+    text-align: left;
+    min-height: 250px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .Offer .Offers img {
+    width: 25%;
+  }
+
+  .Offer .Offers p {
+    font-size: 0.7em;
+  }
+
+  .Articles h2 {
+    text-align: left;
+    padding: 0 10%;
+  }
+
+  .Articles .Cards .Card {
+    width: 23%;
+  }
+
+  .Articles .Cards .Card .img {
+    height: 150px;
+  }
+
+  .Articles .Cards .Card h3 {
+    font-size: 1em;
+  }
+
+  .Articles .Cards .Card p {
+    font-size: 0.8em;
+  }
+}
